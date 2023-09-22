@@ -1,0 +1,409 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap');
+
+    *{
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        margin: 0;   
+    }
+    body{
+        color:#343a40;
+        padding: 0;
+        overflow-x: hidden;
+        margin: 0; 
+    }
+    .navbar-dark .navbar-nav .nav-link{
+        color:black !important;
+    }
+    .navbar-nav > li.dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+    .navbar{
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+        height: 5rem;
+        transition: all ease-in-out 0.4s;
+    }
+    
+    /* .white-content{
+        color:white !important;
+    }
+    span{
+        color:blue;
+    }
+    .navbar {
+        background: url('/PROJECT7/CSS/_import_61b1b961adece2.40419793_FPpreview.mp4'); 
+        background-size: cover; 
+    }
+    .navbar-nav > li.dropdown:hover > .dropdown-menu {
+        display: block;
+    }
+    .navbar{
+        position:fixed;
+        background: none;
+    }
+     */
+    /* precious navbar */
+     nav ul li .nav-link {
+        /* color:white; */
+        padding: 2rem;
+        position: relative;
+        overflow: hidden; /* Hide the border initially */
+      }
+      
+      nav ul li .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #107bbb;
+        transform: scaleX(0); /* Start with no width (scaled to 0) */
+        transform-origin: left; /* Scale from the left edge */
+        transition: transform 0.3s ease-in-out; /* Transition the transform property */
+      }
+      
+      nav ul li .nav-link:hover::before {
+        transform: scaleX(1); /* Scale to full width (1) on hover */
+      }
+      .dropdown-menu{
+        background: black !important;
+      }
+      nav ul li .dropdown-item{
+        color:white !important;
+        transition: all ease-in-out 0.4s;
+      }
+      nav ul li .dropdown-item:focus{
+        background: none !important;
+      }
+      nav ul li .dropdown-item:hover{
+        color:black;
+        background: #3f4851 !important;
+       }
+    
+      /* precious navbar end */
+
+/* first */
+
+/* brand motion */
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos-slide img{
+    height: 50px;
+    margin: 0 40px;
+}
+.logos-slide{
+    display: inline-block;
+    animation: 15s slide infinite linear;
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+.logos{
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 60px 0;
+    position: relative;
+}
+.logos::before,
+.logos:after{
+    position: absolute;
+    top:0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before{
+    left:0;
+    background:linear-gradient(to left, rgba(255, 255, 255, 0), white);  
+}
+.logos:after{
+    right:0;
+    background:linear-gradient(to right, rgba(255, 255, 255, 0), white);  
+}
+/* brand motions end here */
+
+
+.Bimage{
+    margin: 5px;
+}
+
+
+.first button:hover {
+    border-radius: 20%;
+    color: aliceblue;
+    background: #3f4851;
+    /* color: #95232300; */
+}
+.second .buttons button:hover{
+    border-radius: 20%;
+    color: aliceblue;
+    background: #3f4851;
+}
+.third{
+    padding:0rem 5rem 0rem 5rem;
+    margin: auto;
+    transition: all ease-in-out 0.6s;
+}
+.third .buttons button{
+    transition: all ease-in-out 0.6s;
+}
+.third .buttons button:hover{
+    border-radius: 20%;
+    color: aliceblue;
+    background: #3f4851;
+}
+
+.fourth .buttons button{
+    transition: all ease-in-out 0.6s;
+}
+.fourth .buttons button:hover{
+    border-radius: 20%;
+    color: aliceblue;
+    background: #3f4851;
+}   
+/*  */
+.main {
+    height: 90vh;
+    width: 100%;
+    background: url(./word-press/images/splash.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Other styles like background-size can be added here */
+}
+    .dark {
+        background-color: #3f4851 !important; 
+      }
+    .light{
+        background-color: #343a40;
+    }
+  
+    .main .buttons button{
+    background-color: transparent;
+    border: white 0.1rem solid;
+    border-radius: 0.6rem;
+    color: white;
+    
+    }
+    .main .container{
+        margin:auto;
+    }
+    /* .research{
+        margin-top:10rem;
+         } */
+    .research button{
+        box-sizing: border-box;
+        background: transparent;
+        color: dodgerblue;
+        padding: 0.6rem;
+        border: solid 0.01rem slategrey;
+        transition: 0.6s all ease-in-out;
+    }
+    .business {
+        margin-top: 10rem;
+    }
+    .business img{
+        height: 22rem;
+    }
+    .business h4{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    .business .buttons button{
+        background-color: transparent;
+        border: slategrey 0.1rem solid;
+        border-radius: 0.6rem;
+        color: dodgerblue;
+        transition: ease-in-out all 0.6s;
+    }
+    .website img{
+        height: 12rem;
+        width: 35rem;    }
+    .website h4{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    .website .buttons button{
+        background-color: transparent;
+        border: slategrey 0.1rem solid;
+        border-radius: 0.6rem;
+        color: dodgerblue;
+    }
+    /* .website{
+        margin-top: 10rem;
+    } */
+    .retainer {
+        margin-top: 10rem;
+    }
+    .retainer img{
+        height: 22rem;
+    }
+    .retainer h4{
+        font-size: 2rem;
+        font-weight: 100;
+    }
+    .retainer .buttons button{
+        background-color: transparent;
+        border: slategrey 0.1rem solid;
+        border-radius: 0.6rem;
+        color: dodgerblue;
+    }
+    .client{
+        margin-top: 10rem;
+    }
+
+    .swiper{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        overflow: hidden;
+        overflow: clip;
+        list-style: none;
+        padding: 5rem!important;
+        z-index: 1;
+        display: block;
+    }
+    .testimonialBox{
+        position: relative;
+        width: 100%;
+        padding:1rem 0rem 0rem 4rem;
+        color: #343a40;
+    }
+/*  */
+
+    .testimonialBox .details{
+        align-items: center;
+    }
+    .testimonialBox .details .imgBx{
+        width: 19rem;
+        height: 5rem;
+        border:0px;
+        border-radius: 50%;
+        margin: 2rem;
+    }
+    .testimonialBox .details .imgBx img{
+        border-radius:50%;
+    }
+    .rate{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .write button{
+        background-color: transparent;
+        border: slategrey 0.1rem solid;
+        border-radius: 0.6rem;
+        color: dodgerblue;
+        float: right;
+    }
+    .get-in-touch{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .get-in-touch .call img{
+        width: 18rem;
+        height: 10rem;
+        border-left: 0;
+        border-right: 0;
+        border:0.2rem #343a40 solid;
+        border-radius: 50%;
+        border-top: 0.2rem;
+     }
+   
+     form{
+        margin-top: 10rem;
+     }
+     form button{
+        box-sizing: border-box;
+        background: transparent;
+        color: dodgerblue;
+        padding: 0.3rem;
+        border: solid 0.01rem slategrey;
+        margin-bottom: 5rem;
+    }
+    /*  */
+    footer{
+        margin-bottom: -10rem;
+        margin-top:-5rem;   
+        /* margin-right: -8rem;
+        margin-left:-9rem; */
+    }
+    footer .social a i{
+        size: 3rem;
+    }
+    footer li a{
+        text-decoration: none;
+    }
+    footer .social  a i {
+        border:solid 0.09rem blue;
+    }
+    .social .facebook-icon {
+        display: inline-block;
+        border: 2px solid #3c5b9b;
+        padding: 8px;
+        color:white;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+     .social .linkedin-icon {
+        display: inline-block;
+        border: 2px solid #107bbb;
+        color:white;
+        padding: 5px;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+      
+    .social .google-icon {
+        display: inline-block;
+        border: 2px solid #de4d38;
+        padding: 5px;
+        color:white;
+        border-radius: 50%;
+        margin-right: 5px;
+        transition: all ease-in-out 0.3s;
+        top:0px;
+    }
+    
+    .list-unstyled a:hover{
+            color:white;
+    }
+  /*  */
+    .reveal{
+        position:relative;
+        transform:translateY(150px);
+        opacity:0;
+        transition:all 2s;
+    }
+    .reveal.active{
+        transform:translateY(0px);
+        opacity:1;
+    }
+
+    .contentp{
+        position:relative;
+        transform:translateX(150px);
+        opacity:0;
+        transition:all 2s;
+      }
+      .contentp.active{
+        transform:translateX(0px);
+        opacity:1;
+      }
+      .contentn{
+        position:relative;
+        transform:translateX(-150px);
+        opacity:0;
+        transition:all 2s;
+      }
+      .contentn.active{
+        transform:translateX(0px);
+        opacity:1;
+      }

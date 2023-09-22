@@ -1,0 +1,563 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- jquery -->
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.ripples@0.6.3/dist/jquery.ripples-min.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap CSS -->
+    <script src="./JS/dat.gui.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+
+    <title>SpreeDigital</title>
+  </head>
+  <style>
+    *{
+      user-select: none;
+    }
+      .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dg.ac{
+      display: none;
+    }
+    canvas{
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+  <body>
+    <!-- navbar -->
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">Spree<span class="text-primary">Digital</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  What We Do
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./Web-Design/">Web Design And Developement</a></li>
+                  <li><a class="dropdown-item" href="./word-press/">Managed Wordpress Hosting</a></li>
+                  <li><a class="dropdown-item" href="./marketing/">Contact Marketing:BOSS program</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  What We've Done
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Our Work</a></li>
+                  <li><a class="dropdown-item" href="#">Backstage @CleverLight</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  What Can We Do For You?
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                  <li><a class="dropdown-item" href="#">00 0 0 00</a></li>
+                  <li><a class="dropdown-item" href="#">Get a Qoute</a></li>
+                  <li><a class="dropdown-item" href="#">Get a Support</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+         
+        <!-- header -->
+    <div class="main col-md-12 d-flex justify-content-center text-center text-white" style="background-repeat: no-repeat;">
+      <div class="m-auto justify-content-center">
+        <div class="text-center">
+          <h1>Transform Your Website.</h1>
+          <h1>Grow Your Digital Brand.</h1>
+          <h5>From Website Design and Managed Hosting to Digital Marketing</h5>
+          <h5>and Content Development, CleverLight has you covered</h5>
+        <div class="buttons mt-4 text-center">
+          <button class="p-3">WEB DESIGN</button>
+          <button class="p-3">BOSS PROGRAM</button>
+        </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!-- research -->
+   <section style="padding: 6rem;" class="first">
+      <div class="research reveal justify-content-center text-center text-black bg-light">
+            <!-- <div class="justify-content-center "> -->
+            <h4>Research, Replicate, Dominate!</h4>
+            <p>Our process begins by researching your competitors, their
+                strategies, and their best practices. Where their success 
+                ends is where yours begins.
+            </p>
+          <button class="mt-4 w-auto ">OUR WORK</button>
+          <!-- </div> -->
+      </div>
+   </section>
+
+<!-- brand-carousel -->
+   <div class="logos">
+      <div class="logos-slide">
+        <img src="./wordpres/B1.png" alt="">
+        <img src="./wordpres/B2.png" alt="">
+        <img src="./wordpres/B3.png" alt="">
+        <img src="./wordpres/B4.png" alt="">
+        <img src="./wordpres/B5.png" alt="">
+        <img src="./wordpres/B6.png.crdownload" alt="">
+        <img src="./wordpres/B7.png" alt="">
+     </div>
+     <div class="logos-slide">
+      <img src="./wordpres/" alt="">
+      <img src="./wordpres/B2.png" alt="">
+      <img src="./wordpres/B3.png" alt="">
+      <img src="./wordpres/B4.png" alt="">
+      <img src="./wordpres/B5.png" alt="">
+      <img src="./wordpres/B6.png.crdownload" alt="">
+      <img src="./wordpres/B7.png" alt="">
+   </div>
+   </div>
+
+   <!-- business -->
+   <section class="business second" style="padding:0rem 5rem 0rem 5rem">
+      <div class="flex-wrap d-flex m-auto">
+        <div class="col-md-6">
+          <div class="Bimage contentn">
+            <img class="img-fluid mb-4" src="https://img.freepik.com/free-photo/programming-background-with-person-working-with-codes-computer_23-2150010125.jpg?w=740&t=st=1688582718~exp=1688583318~hmac=a45c32431656d2c83616705322496ef911a69e264c07e013814ebe4f283795f6" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 contentp">
+        <h4><b>Content Marketing</b></h4>
+        <h4>Spree<span>Digital</span></h4>
+        <p class="mb-4">As all business owners knwo, it's difficult to find the time
+            to manage and grow our digital brand. We created the  BOSS(Business Owner Select Services) program to 
+            address this fundamental need in every business owner's to-do list.
+        </p>
+        <div class="buttons mt-4">
+          <button class="p-3">GET STARTED</button>
+          <button class="p-3">FEATURES</button>
+        </div>
+    </div>
+      </div>
+   </section>
+<!-- website -->
+<section class="third">
+  <div class="website reveal d-flex flex-wrap active">
+     <!-- <div class="d-flex flex-row   "> -->
+        <div class="col-md-6" style="margin: auto;">
+          <h4><b>Website Design</b></h4>
+          <h4>More than Just Pretty Pixel</h4>
+          <p>CleverLight doesn’t just design and develop websites. Our methodology of <strong>Research, Replicate, Dominate</strong> means that we are looking at your competitors and industry leaders to see who you are up against. We are finding the key design elements, functionality, and conversion funnels that are proven to work for them. We then use our skills to take your website to the next level.</p>
+         <div class="buttons mt-4">
+           <button class="p-3">PRICING</button>
+           <button class="p-3">WHAT WE DO</button>
+         </div>
+       </div>
+        <div class="col-md-6">
+       <div class="col-md-12 d-flex">
+          <div class="Bimage col-md-3">
+            <!-- <div class="col-md-12">
+              <img src="./wordpres/E4.webp" class="img-fluid" alt="">
+            </div> -->
+            <div class="col-md-12">
+              <img src="./wordpres/E6.webp" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12">
+              <img src="./wordpres/E7.jpg" class="img-fluid" alt="">
+            </div>               
+          </div>
+
+          <div class="Bimage col-md-3">
+            <div class="col-md-12">
+              <img src="./wordpres/template1.webp" class="img-fluid" alt="">
+            </div>
+            <!-- <div class="col-md-12">
+              <img src="./wordpres/template2.webp" class="img-fluid" alt="">
+            </div> -->
+            <div class="col-md-12">
+              <img src="./wordpres/template3.jpg" class="img-fluid" alt="">
+            </div>               
+          </div>
+
+
+          <div class="Bimage col-md-3">
+            <div class="col-md-12">
+              <img src="./wordpres/wordF3.jpg" class="img-fluid" alt="">
+            </div>
+            <!-- <div class="col-md-12">
+              <img src="./wordpres/wordF4.jpg" class="img-fluid" alt="">
+            </div> -->
+            <div class="col-md-12">
+              <img src="./wordpres/wordF5.jpg" class="img-fluid" alt="">
+            </div>               
+          </div>
+
+
+          <div class="Bimage col-md-3">
+            <div class="col-md-12">
+              <img src="./wordpres/ER1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-12">
+              <img src="./wordpres/ER3.jpg" class="img-fluid" alt="">
+            </div>
+            <!-- <div class="col-md-12">
+              <img src="./wordpres/E7.jpg" class="img-fluid" alt="">
+            </div>                -->
+          </div>
+        </div>
+      </div>
+   <!-- </div> -->
+</section>
+  <!-- retainer -->
+ <section class="fourth">
+  <div class="retainer d-flex flex-wrap">
+        <div class="col-md-6">
+          <div class="Bimage contentn">
+            <img class="img-fluid mb-4" src="https://img.freepik.com/free-photo/male-system-hacker-coding-security-program-pc-software-programming-firewall-data-encryption-server-using-computer-code-application-script-display_482257-46797.jpg?w=900&t=st=1688589246~exp=1688589846~hmac=b3f13813e46cac479e10ae6be0de924065a36b3d4ce8d1c614096bfa211d7740" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 contentp">
+           <h4><b>Content Marketing</b></h4>
+           <h4>Spree<span>Digital</span></h4>
+           <p class="mb-4">As all business owners knwo, it's difficult to find the time
+              to manage and grow our digital brand. We created the BOSS(Business Owner Select Services) program to
+              address this fundamental need in every business owner's to-do list.
+          </p>
+          <div class="buttons mt-4">
+            <button class="p-3">GET A QOUTE</button>
+            <button class="p-3">CASE STUDY</button>
+          </div>
+        </div>
+  </div>
+ </section>
+<!-- clients -->
+<div class="client content">
+  <div class="container text-center  ">
+    <h1>See What We've Done For Our Clients</h1>
+    <h5>Imagine What We'll Do For You</h5>
+    </div>
+</div>
+<div class="swiper mySwiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+      <div class="testimonialBox" style="width: fit-content;">
+        <div class="content col-md-8 m-auto" style="justify-content: center;">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias consequuntur et nesciunt voluptatem quia vitae perspiciatis recusandae, veritatis enim placeat quo a nihil cumque corrupti repellat ad at? Magni.
+              </p>
+              <div class="details col-md-8 d-flex flex-row m-auto">
+                <div class="imgBx">
+                  <img class="img-fluid" src="/PROJECT7/clients/1.jpg" alt="">
+                </div>
+                <h3>Ali Saleem<span>Software Engineer</span></h3>
+               </div>
+              </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="testimonialBox" style="width: fit-content;">
+        <div class="content col-md-8 m-auto" style="justify-content: center;">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias consequuntur et nesciunt voluptatem quia vitae perspiciatis recusandae, veritatis enim placeat quo a nihil cumque corrupti repellat ad at? Magni.
+              </p>
+              <div class="details col-md-8 d-flex flex-row m-auto">
+                <div class="imgBx">
+                  <img class="img-fluid" src="/PROJECT7/clients/1.jpg" alt="">
+                </div>
+                <h3>Ali Saleem<br><span>Software Engineer</span></h3>
+               </div>
+              </div>
+      </div>
+    </div>
+    <div class="swiper-slide">
+      <div class="testimonialBox" style="width: fit-content;">
+        <div class="content col-md-8 m-auto" style="justify-content: center; ">
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate molestias consequuntur et nesciunt voluptatem quia vitae perspiciatis recusandae, veritatis enim placeat quo a nihil cumque corrupti repellat ad at? Magni.
+              </p>
+              <div class="details col-md-8 d-flex flex-row m-auto">
+                <div class="imgBx">
+                  <img class="img-fluid" src="/PROJECT7/clients/1.jpg" alt="">
+                </div>
+                <h3>Ali Saleem<br><span>Software Engineer</span></h3>
+               </div>
+         </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<!-- write -->
+<div class="write reveal">
+  <div class="container justify-content   ">
+      <button class="btn btn-block">WRITE A REVIEW</button>
+   </div>
+</div>
+<!-- consult -->
+<div class="get-in-touch reveal ">
+   <div class="justify-content-center  text-center ">
+    <div class=" text-center">
+      <div class="call mx-auto border w-auto">
+        <h1>Have Question? Schedule a <br> Call</h1>
+        <img class="img-fluid d-block  d-flex  mx-auto" src="/PROJECT7/clients/3.jpg" alt="">
+        <a href="#"><button class="mt-4 mb-4 bg-light p-2 border-light border-2 ">Schedule a Consultation</button></a>
+      </div>
+     
+  </div>
+
+  <form action="" class="m-auto" >
+    <div class="container col-md-12 flex-wrap " style="justify-content: center;">
+      <!-- <div class="row"> -->
+        <h3 class="contentp active">Read to Get Started?<br>Get A Qoute</h3>
+          <div class="contentn active col-md-12 m-auto flex-wrap">
+            <div class="first-btns d-flex justify-content-center col-md-12 flex-wrap">
+              <input size="25" class="p-2 m-2 " aria-required="true" aria-invalid="false" placeholder="First Name" value="" type="text" name="first-name">      
+              <input size="25" class="p-2 m-2 " aria-required="true" aria-invalid="false" placeholder="Last Name" value="" type="text" name="first-name">       
+            </div>
+            <div class="second-btns d-flex flex-row justify-content-center flex-wrap">
+              <input size="25" class="p-2 m-2" aria-required="true" aria-invalid="false" placeholder="Email" value="" type="email" name="first-name">      
+              <input size="25" class="p-2 m-2" aria-required="true" aria-invalid="false" placeholder="Phone" value="" type="text" name="first-name">       
+            </div>
+            <div class="third-btns d-flex flex-row justify-content-center ">
+              <input style="width: 48%;" class="p-2 m-2" aria-required="true" aria-invalid="false" placeholder="Website URL" value="" type="url" name="first-name">      
+            </div> 
+            <div class="texts d-flex flex-row justify-content-center col-md-12 flex-wrap">
+              <textarea rows="7" class="m-2 p-3" name="" id="" placeholder="Tell us a bit about your project"></textarea>
+              <textarea rows="7" class="m-2 p-3" name="" id="" placeholder="Tell us a bit about your project"></textarea>
+           </div> 
+          </div>
+         <div class="form-check ">
+           <!-- <div class="container "> -->
+            <!-- <div class="row"> -->
+              <div>
+                <p>I am interested in:</p>
+              </div>
+              <div class="checkbox m-auto">
+                <div class="check-1 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox1">
+                        <label class="form-check-label1" for="exampleCheckbox1">
+                            Web Designing
+                        </label>
+                    </div>
+                </div>
+                <div class="check-2 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox2">
+                        <label class="form-check-label2" for="exampleCheckbox2">
+                            Managed Hosting
+                        </label>
+                    </div>
+                </div>
+                <div class="check-3 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex ">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox3">
+                        <label class="form-check-label3" for="exampleCheckbox3">
+                            BOSS Program
+                        </label>
+                    </div>
+                </div>
+                <div class="check-4 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex ">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox4">
+                        <label class="form-check-label4" for="exampleCheckbox4">
+                            Content Development
+                        </label>
+                    </div>
+                </div>
+                <div class="check-5 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex ">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox5">
+                        <label class="form-check-label5" for="exampleCheckbox5">
+                            Copywriting
+                        </label>
+                    </div>
+                </div>
+                <div class="check-6 m-2" style="display:inline-block;">
+                    <div class="form-check d-flex ">
+                        <input class="form-check-input" type="checkbox" id="exampleCheckbox6">
+                        <label class="form-check-label6" for="exampleCheckbox6">
+                            Print/Graphic Design
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+      
+      <button class="mb-2">SUBMIT</button> 
+   </div>
+  </div></form>
+    <!-- <button class="mb-2">SUBMIT</button>  -->
+ </div>
+</div>
+
+<!-- WEBGL -->
+
+<!-- <canvas style="background-color: black;"></canvas>
+<div class="board">
+  <span class="board-close">&times;</span>
+</div> -->
+<!-- footer -->
+
+
+
+<footer class="bg-dark text-light p-4">
+  <div class="d-flex p-3 flex-wrap col-md-12">
+
+    <!-- <div class="justify-content-center col-md-4"> -->
+      <div class="m-auto col-md-4 general" style="text-align: center;">
+        <h5>Spree<span>Digital</span></h5>
+        <p>dawdawdwa</p>
+        <p>@ 2023 All Right Reserved</p>
+      </div>
+    <!-- </div> -->
+     
+      <div class= " m-auto  col-md-4 justify-content-center" style="text-align: center;">
+        <h5>CONNECT WITH US</h5>
+        <ul class="social">
+          <a href="#" class="facebook-icon"><svg class="svg-inline--fa fa-facebook-f fa-2xl m-1" aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="facebook-f" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg=""><path fill="currentColor" d="M279.1 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.4 0 225.4 0c-73.22 0-121.1 44.38-121.1 124.7v70.62H22.89V288h81.39v224h100.2V288z"></path></svg><!-- <i class="fa-brands fa-facebook-f fa-2xl m-1"></i> Font Awesome fontawesome.com --></a>
+          <a href="#" class="linkedin-icon"><svg class="svg-inline--fa fa-linkedin-in fa-2xl m-1" aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="linkedin-in" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M100.3 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.6 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.3 61.9 111.3 142.3V448z"></path></svg><!-- <i class="fa-brands fa-linkedin-in fa-2xl m-1"></i> Font Awesome fontawesome.com --></a>
+          <a href="#" class="google-icon"><svg class="svg-inline--fa fa-google fa-2xl m-1" aria-hidden="true" focusable="false" data-prefix="fa-brands" data-icon="google" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512" data-fa-i2svg=""><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg><!-- <i class="fa-brands fa-google fa-2xl m-1"></i> Font Awesome fontawesome.com --></a>
+        </ul>
+         <h6>AWESOME</h6>
+      </div>
+
+
+      <div class=" m-auto col-md-4 pb-4" style="text-align: center;">
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Source Files Policy</a></li>
+          <li><a href="#">Powered by Spree<span>Digital</span></a></li>
+        </ul>
+      </div>
+  </div>
+
+ 
+</footer>
+
+ </div>
+    
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./JS/WEBGL.js"></script>
+    <script>
+ var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    </script>
+ <script src="./JS/script.js">
+
+ </script>
+  <script>
+    window.ga = window.ga || function(){
+      (ga.q = ga.q || []).push(arguments);
+    }
+    ga.l = +new Date();
+      ga('create','UA-105392568-1','auto');
+      ga('send','pageview');
+  </script>
+
+   <script >
+  if (window.innerWidth < 1000) {
+    var navbar = document.querySelector(".navbar");
+    navbar.style.position = ""; // Remove the "position" property
+  }
+    </script>
+     <script>
+      $(document).ready(function () {
+          $(".main").ripples({
+              resolution: 256,
+              perturbance: 0.02,
+          });
+      });
+  </script>
+    
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script>
+      // Wait for the DOM to be fully loaded before adding the scroll event listener
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all elements you want to reveal
+        var reveals = document.querySelectorAll(".reveal");
+        var isRevealed = false; // Flag to check if elements are revealed
+    
+        // Add the scroll event listener to the window
+        window.addEventListener("scroll", reveal);
+    
+        // Define the reveal function
+        function reveal() {
+          if (!isRevealed) {
+            for (var i = 0; i < reveals.length; i++) {
+              var windowheight = window.innerHeight;
+              var revealtop = reveals[i].getBoundingClientRect().top;
+              var revealpoint = 150;
+    
+              if (revealtop < windowheight - revealpoint) {
+                reveals[i].classList.add("active");
+              } else {
+                reveals[i].classList.remove("active");
+              }
+            }
+    
+            // Check if all elements have been revealed
+            isRevealed = Array.from(reveals).every(function (el) {
+              return el.classList.contains("active");
+            });
+    
+            // If all elements are revealed, remove the scroll event listener
+            if (isRevealed) {
+              window.removeEventListener("scroll", reveal);
+            }
+          }
+        }
+    
+        // Trigger reveal on initial page load
+        reveal();
+      });
+    </script>
+      
+
+  </body>
+</html>

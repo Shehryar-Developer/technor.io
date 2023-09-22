@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;1,300&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  color: #343a40;
+  padding: 0;
+  margin: 0;
+ overflow-x: hidden;
+}
+
+.white-content {
+  color: white !important;
+}
+
+span {
+  color: blue;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:black !important;
+}
+.navbar{
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  height: 5rem;
+  transition: all ease-in-out 0.4s;
+}
+.dropdown-menu{
+  background: black !important;
+}
+nav ul li .dropdown-item{
+  color:white !important;
+  transition: all ease-in-out 0.4s;
+}
+nav ul li .dropdown-item:focus{
+  background: none !important;
+}
+nav ul li .dropdown-item:hover{
+  color:black;
+  background: #3f4851 !important;
+ }
+
+.navbar {
+  background-size: cover; /* Scale the image to cover the entire navbar */
+  position: fixed;  
+  z-index: 1;
+}
+
+.navbar-nav > li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+nav ul li .nav-link:hover::before {
+  transform: scaleX(1); /* Scale to full width (1) on hover */
+}
+nav ul li .nav-link:hover::before {
+  transform: scaleX(1);
+}
+nav ul li .nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #107bbb;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+nav ul li .nav-link {
+  /* color: white; */
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+.main {
+  height: 90vh;
+  width: 100%;
+  background:  url(../word-press/images/splah2.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Other styles like background-size can be added here */
+}
+
+.dark {
+  background-color:#343a40 !important; /* Change the background color as desired */
+  /* Add any additional styles for the dark background */
+}
+
+/* .light {
+  background-color: #343a40;
+} */
+
+.main .buttons button {
+  background-color: transparent;
+  border: white 0.1rem solid;
+  border-radius: 0.6rem;
+  color: white;
+}
+
+.main .container {
+  margin-top: 10rem;
+}
+.margin{
+  margin: 3rem;
+    /* margin-top:5rem;
+    margin-left:2rem;
+    margin-right:2rem; */
+}
+.pos-y{
+    margin-top:-6rem;
+}
+.pos-x{
+    margin-left:10rem;
+}
+.items{
+    margin-left: 29rem;
+}
+.tops{
+    margin-top:7rem;
+    margin-bottom: 2rem;
+}
+span{
+    color:blue;
+}
+.social .facebook-icon {
+    display: inline-block;
+    border: 2px solid #3c5b9b;
+    padding: 8px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.social .linkedin-icon {
+    display: inline-block;
+    border: 2px solid #107bbb;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.social .google-icon {
+    display: inline-block;
+    border: 2px solid #de4d38;
+    padding: 5px;
+    color: white;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+.list-unstyled a:hover {
+    color: white;
+}
+
+
+footer li a {
+    text-decoration: none;
+}
+.reveal{
+    position:relative;
+    transform:translateY(150px);
+    opacity:0;
+    transition:all 2s;
+}
+.reveal.active{
+    transform:translateY(0px);
+    opacity:1;
+}
+.contentp{
+  position:relative;
+  transform:translateX(150px);
+  opacity:0;
+  transition:all 2s;
+}
+.contentp.active{
+  transform:translateX(0px);
+  opacity:1;
+}
+.contentn{
+  position:relative;
+  transform:translateX(-150px);
+  opacity:0;
+  transition:all 2s;
+}
+.contentn.active{
+  transform:translateX(0px);
+  opacity:1;
+}
+.get-in-touch{
+  margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+.get-in-touch .call img {
+  width: 18rem;
+  height: 10rem;
+  border-left: 0;
+  border-right: 0;
+  border: 0.2rem #343a40 solid;
+  border-radius: 50%;
+  border-top: 0.2rem;
+}
+.compete .contentp h4::before {
+  content: "";
+  position: absolute;
+  top: 27px; /* Adjust the distance from the text to the border */
+  left: 0;
+  width: 0;
+  height: 2px; /* Height of the border */
+  background-color: #007bff; /* Color of the border */
+  transition: width 0.6s ease-in-out; /* Transition effect for the width property */
+}
+
+.compete .contentp h4:hover::before {
+  width: 100%; /* Expand the border to 100% on hover */
+}
+.compete .contentp h4 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Add some padding to make space for the border */
+}
+
+
+/*  */
+.compete .contentn h4::before {
+  content: "";
+  position: absolute;
+  top: 27px; /* Adjust the distance from the text to the border */
+  left: 0;
+  width: 0;
+  height: 2px; /* Height of the border */
+  background-color: #007bff; /* Color of the border */
+  transition: width 0.6s ease-in-out; /* Transition effect for the width property */
+}
+
+.compete .contentn h4:hover::before {
+  width: 100%; /* Expand the border to 100% on hover */
+}
+.compete .contentn h4 {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px; /* Add some padding to make space for the border */
+}
